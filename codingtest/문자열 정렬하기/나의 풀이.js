@@ -4,8 +4,8 @@ function solution(my_string) {
     let i = 0;
     let Num = 0;
     while(i < my_string.length){
-        if(my_string[i] === 'number'){
-            Number[Num] = my_string[i]
+        if(my_string[i] >= '0' && my_string[i] <= '9'){
+            Number[Num] = +my_string[i]
             Num++;
         }
         i++;
@@ -22,5 +22,3 @@ function solution(my_string) {
     answer = Number;
     return answer;
 }
-
-solution("hi")
