@@ -1,26 +1,16 @@
-function solution(my_string) {
-    var answer = [];
-    let Number = [];
-    let i = 0;
-    let Num = 0;
-    while(i < my_string.length){
-        if(my_string[i] === 'number'){
-            Number[Num] = my_string[i]
-            Num++;
-        }
-        i++;
-    }
-    for (let i = 0; i < Number.length - 1; i++) {
-      for (let j = 0; j < Number.length - 1 - i; j++) {
-        if (Number[j] > Number[j + 1]) {
-          let temp = Number[j];
-          Number[j] = Number[j + 1];
-          Number[j + 1] = temp;
-        }
+function solution(order) {
+  var answer = 0;
+  let i = 0;
+  let StringOrder = String(order);
+  while(i < StringOrder.length){
+      if(StringOrder[i] === "3" ||
+         StringOrder[i] === "6" ||
+         StringOrder[i] === "9"){
+          answer++;
       }
-    }
-    answer = Number;
-    return answer;
+      i++;
+  }
+  return answer;
 }
 
-solution("hi")
+solution(29423)
