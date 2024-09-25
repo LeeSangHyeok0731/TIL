@@ -116,6 +116,21 @@ import { useNavigate } from "react-router-dom";
 const navigate = useNavigate();
 
 const onClick = () => {
-	navigate('/')
+	navigate('url')
 }
+```
+
+여기에는 속성을 추가 할 수 있는데
+1. place
+* 기본값은 false이고, true로 설정한다면 이동 후 뒤로가기가 불가능해진다.
+```jsx
+navigate("url", { replace: true });
+```
+2.  state
+* state 전달 기능이 있다
+```jsx
+navigate("url", { state: { cardId: cardId } });
+
+const location = useLocation();
+const { cardId } = location.state;
 ```
