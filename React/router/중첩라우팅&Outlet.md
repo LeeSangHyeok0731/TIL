@@ -5,8 +5,8 @@
 한 중첩 라우팅을 구현할 경우 해당 하위 페이지 이외에는 컨텐츠가 바뀌지 않는다는 특징이 있다
 
 ```jsx
-<Route path="/parents" element={<Parents>}>
-    <Route path="/child" elememt={<Child>} />
+<Route path="/parents" element={<Parents />}>
+    <Route path="/child" elememt={<Child />} />
 </Route>
 ```
 
