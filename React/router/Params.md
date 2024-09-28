@@ -115,6 +115,8 @@ import { useSearchParams } from 'react-router-dom';
 
 function Example() {
   const [searchParams, setSearchParams] = useSearchParams();
+  const name = searchParams.get('name');
+  const age = searchParams.get('age');
   const updateQuery = () => {
     setSearchParams({ name: 'Lee', age: '18' });
   };
