@@ -185,13 +185,3 @@ return (
 3.  **onSuccess**: 성공 시 실행되는 process
 4.  **onError**: 에러발생 시 실행되는 process
 5.  **queryClient.invalidateQueries(\["key값"\])**: 데이터가 변경되었을 때 **자동으로 다시 가져오도록** 설정
-
-## **결론**
-
-우선 배우면서 굉장히 즐거웠다
-
-api통신할 때는 fetch, axios를 사용했는데
-
-앞으로는 tanstack-query를 사용해서 조금 더 효율적으로 코드를 작성하는 방법을 알게 되어
-
-정말 좋고 재미있었다
