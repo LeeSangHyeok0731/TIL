@@ -30,7 +30,7 @@ pnpm add @tanstack/react-query
  </QueryClientProvider>
 ```
 
-내가 이번에 공부하고 사용한 기능은 `useQuery와 use-mutation이다`
+내가 이번에 공부하고 사용한 기능은 `useQuery`와 `use-mutation이다`
 
 ## useQuery
 
